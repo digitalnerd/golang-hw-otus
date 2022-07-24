@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	// "reflect"
+	"reflect"
 	"strings"
 )
 
@@ -11,17 +11,15 @@ func Top10(str string) []string {
 
 	words := strings.Fields(str)
 	topWords := make(map[int]string)
-	// fmt.Println(reflect.TypeOf(words))
+	fmt.Println(reflect.TypeOf(words))
 	for i, word := range words {
-		// fmt.Println(word)
-		// put words to a map
-		// topWords = make(map[int]string)
 		topWords[i] = word
-		for i, key := range topWords {
-			fmt.Println(i, key)
-		}
-
 	}
+
+	for i, key := range topWords {
+		fmt.Println(i, key)
+	}
+
 	return nil
 }
 
