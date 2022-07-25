@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// look at this example -> https://www.geeksforgeeks.org/how-to-remove-duplicate-values-from-slice-in-golang/
+// this one was very helpful -> https://www.geeksforgeeks.org/how-to-sort-golang-map-by-keys-or-values/
 func Top10(str string) {
 
 	words := strings.Fields(str)
